@@ -1,0 +1,156 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Farmacia Clínica</title>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/es6-promise/dist/es6-promise.auto.min.js"></script>
+  <script type="text/javascript" src="redist/jquery.3.5.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.imagemapster.js"></script>
+  <link rel="stylesheet" href="style/bootstrap.min.css" />
+  <link rel="stylesheet" href="stylesheets/base.css" />
+  <href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+ 
+</head>
+
+<body>
+
+
+  <header class="header">
+    
+      <h1>Fundamentos da Farmacia Clínica - <b>unidade 1</b></h1>
+    
+  </header>
+
+
+
+  <section id="conteudo" class="container">
+      <center>
+      <img id="fluxo-farmaciaclinica" src="images/fluxo.png" width="664" height="463" orgWidth="664" orgHeight="463"
+        usemap="#image-maps" alt="" style="align-items:center;"/>
+      <div style=""></div>
+      <div id="selections" style=""></div>
+
+      <map name="image-maps" id="ImageMapsCom-image-maps-2021-08-25-152018">
+        <area id="selecao" alt="" title="Seleção" href="#" shape="rect" coords="269,33,396,92" style="outline:none;"
+          target="_self" name="selecao" />
+
+        <area id="programacao" alt="" title="Programação" href="#" shape="rect" coords="469,112,632,184"
+          style="outline:none;" target="_self" name="programacao" />
+
+        <area id="aquisicao" alt="" title="Aquisição" href="#" shape="rect" coords="488,252,611,317"
+          style="outline:none;" target="_self" name="aquisicao" />
+
+        <area id="armazenamento" alt="" title="Armazenamento" href="#" shape="rect" coords="244,359,418,425"
+          style="outline:none;" target="_self" name='armazenamento' />
+
+        <area id="distribuicao" alt="" title="Distribuição" href="#" shape="rect" coords="64,249,185,318"
+          style="outline:none;" target="_self" name="distribuicao" />
+
+        <area id="utilizacao" alt="" title="Utilização: prescrição, dispensação e uso" href="#" shape="rect"
+          coords="34,113,212,182" style="outline:none;" target="_self" name="utilizacao" />
+
+        <area id="gerenciamento" alt=""
+          title="Gerenciamento Financiamento Recursos humanos Sistemas de informação Controle e avaliação" href="#"
+          shape="rect" coords="253,130,408,315" style="outline:none;" target="_self" name="gerenciamento" />
+
+        <area shape="rect" coords="662,461,664,463" alt="Image Map" style="outline:none;" title="Image Map"
+          href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+      </map>
+
+    </center>
+  </section>
+
+  <h5>Fonte: Adaptado do manual de Assistência farmacêutica para gerentes municipais, 2003.</h5>
+  <footer id="footer" class="container">
+    <img src="logos/logo-lais.png" alt="LAIS">
+    <img id="avasus"src="logos/logo-avasus.png" alt="AVASUS">
+    <img src="logos/logo-sedis.png" alt="SEDIS">
+    <img id="ufrn" src="logos/ufrn.png" alt="UFRN">
+  </footer>
+
+
+
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      'use strict';
+
+      var image = $('img'),
+        xref = {
+          selecao:
+            '<b>Seleção - </b> A seleção é um processo de escolha de medicamentos,' +
+            ' baseada em critérios epidemiológicos, técnicos e econômicos, estabelecidos por uma Comissão de Farmática e Terapêutica (CFT),' +
+            ' visando assegurar medicamentos seguros, eficazes e custo-efetivos com a finalidade de racionalizar seu uso, harmonizar condutas terapêuticas,' +
+            ' direcionar o processo de aquisição, produção e políticas farmacêuticas.' +
+            ' É a atividade mais importante da Assitência Farmacêutica, pois é a partir da seleção que são desenvolvidas as demais atividades.',
+
+          programacao:
+            "<b>Programação - </b> Programar consiste em estimar quantidades a serem adquiridas para atendimento a determinada demanda" +
+            ' dos serviços, por determinado período de tempo. A programação inadequada reflete diretamente sobre o abastecimento e o acesso ao medicamento.',
+
+          aquisicao:
+            '<b>Aquisição - </b> Consiste num conjunto de procedimentos pelos quais se efetiva o processo de compra dos medicamentos,' +
+            ' de acordo com uma programação estabelecida, com o objetivo de suprir necessidades de medicamentos em' +
+            ' quantidade, qualidade e menor custo-efetividade e manter a regularidade do sistema de abastecimento.',
+
+          armazenamento:
+            '<b>Armazenamento - </b> Conjunto de procedimentos técnicos e administrativos que tem por finalidade assegurar as condições' +
+            ' adequadas de conservação dos produtos.',
+          distribuicao:
+            '<b> Distribuição - </b> Consiste no suprimento de medicamentos às unidades de saúde, em quantidade, qualidade e tempo' +
+            ' oportuno. A distribuição de medicamentos deve garantir rapidez e segurança na entrega, eficiência no controle e informação.',
+
+          utilizacao:
+            '<b>Utilização - </b> prescrição, dispensão e uso</b> Dispensação é o ato profissional farmacêutico, que consiste em proporcionar um ou mais medicamentos,' +
+            'em resposta à apresentação de uma receita elaborada por um profissional autorizado. Neste ato o farmacêutico informa e orienta o paciente sobre o uso adequado do medicamento.',
+
+          gerenciamento:
+            '<b>Gerenciamento - </b> Conjunto de atividades que visam ao suprimento adequado dos serviços de acordo com as necessidades' +
+            ' requeridas, em qualidade e quantidades adequadas, em tempo correto e menor custo. O objetivo fundamental da administração de materiais é determinar' +
+            ' quando e quanto adquirir para repor o estoque, o que deixa claro que a estratégia de abastecimento é determinada pelo usuário.',
+
+        },
+        defaultDipTooltip =
+          "Clique em cada etapa para obter mais informações";
+
+      image.mapster({
+        fillOpacity: 0,
+        fillColor: 'B0E0E6',
+        strokeColor: 'B0E0E6',
+        strokeOpacity: 0.0,
+        strokeWidth: 0.0,
+        stroke: false,
+        isSelectable: true,
+        singleSelect: true,
+        mapKey: 'name',
+        listKey: 'name',
+        onClick: function (e) {
+          var newToolTip = defaultDipTooltip;
+          $('#selections').html(xref[e.key]);
+          
+          image.mapster('set_options', {
+            areas: [
+              {
+                key: 'gerenciamento',
+                toolTip: newToolTip
+              }
+            ]
+          });
+        },
+      });
+    });
+  </script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/dark-mode-switch.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
