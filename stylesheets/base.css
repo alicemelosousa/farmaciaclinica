@@ -34,7 +34,7 @@ div {
   color: #002E6E;
   text-align: justify;
   width: 800px;
-  height: 15px;
+  height: 175px;
 }
 
 
@@ -67,9 +67,17 @@ h5 {
   font-weight: normal;
   font-size: 14px;
   color: #9c9c9c;
-  margin-left: auto;
-  margin-top: 50px;
+  text-align:inherit;
+  margin-top: 0px;
+}
 
+h6 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #9c9c9c;
+  text-align: justify;
+  margin-top: 5px; 
+  
 }
 
 
@@ -89,7 +97,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 footer img {
   height: 30px;
